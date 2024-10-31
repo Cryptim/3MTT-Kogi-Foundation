@@ -1,5 +1,5 @@
 
-# Three Million Technical Talent Foundation Website
+# Three Million Technical Talent Kogi Foundation Website
 
 ## Table of Contents
 
