@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 10px 20px; */
+  background-color: #fff;
+  /* border-bottom: 1px solid #ddd; */
+  height: 110px;
+}
+
+.logo {
+  margin-left: 180px; /* Adds space to the left of the logo */
+}
+
+.logo img {
+  width: 78px; /* Adjust size as needed */
+  height: 78px;
+}
+
+.nav {
+  display: flex;
+gap: 40px;  /* gap: 20px; */
+justify-content: center;
+align-items:center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.donate-button {
+  margin-right: 180px; /* Adds space to the right of the button */
+}
+
+.donate-button button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.donate-button button:hover {
+  background-color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo,
+  .donate-button {
+    margin: 0; /* Remove margins for smaller screens */
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/*  */

@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 66px;
+  display: inline-flex;
+}
+
+.logo img {
+  width: 78px; /* Adjust size as needed */
+  height: 78px;
+}
+
+.nav {
+  display: flex;
+  gap: 40px; /* gap: 20px; */
+  justify-content: center;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-size: 18px;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.donate-button {
+  margin-right: 180px; /* Adds space to the right of the button */
+}
+
+.donate-button button {
+  padding: 10px 20px;
+  background-color: #3d4f60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.donate-button button:hover {
+  background-color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo,
+  .donate-button {
+    margin: 0; /* Remove margins for smaller screens */
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* section one */
+.hero-section {
+  display: flex;
+  align-items: center;
+  /* padding: 50px; */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  height: 560.85px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  max-width: 50%;
+}
+
+.text-container h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.text-container button {
+  padding: 10px 20px;
+  background-color: #3b3b3b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.image-container {
+  position: relative;
+  max-width: 560.85px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px dashed #d3d3d3;
+}
+
+.tag {
+  position: absolute;
+  padding: 5px 10px;
+  font-size: 18.26px;
+  background-color: #f0f0f0;
+  border-radius: 10.95px;
+  font-weight: 300;
+  width: 168.26px;
+  text-align: center;
+  height: 48.73px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.tag-collaborations {
+  width: 168.26px;
+  height: 48.73px;
+  padding: 9.13px;
+  left: 80.33px;
+  top: 15.28px;
+  position: absolute;
+  transform: rotate(-5.21deg);
+  transform-origin: 0 0;
+  background: #eae6dd;
+  border-radius: 10.95px;
+  border: 0.5px #c6af7b solid;
+  justify-content: center;
+  align-items: center;
+  gap: 9.13px;
+  display: inline-flex;
+}
+
+.tag-volunteerism {
+  top: 20%;
+  left: 5%;
+  background-color: #b8daf1;
+}
+
+.tag-mentorship {
+  top: 40%;
+  right: 10%;
+  background-color: #d4c4ea;
+}
+
+.tag-empowerment {
+  bottom: 20%;
+  right: 5%;
+  background-color: #b8daf1;
+}
+
+.tag-free-resources {
+  bottom: 5%;
+  left: 10%;
+  background-color: #d4c4ea;
+}
+
+.tag-partnership {
+  bottom: 10%;
+  left: 30%;
+  background-color: #c4eac2;
+}

@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  /* padding-left: 180px; */
+  /* padding-right: 180px;  */
+  padding-top: 16px;
+  padding-bottom: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 66px;
+  display: inline-flex;
+  left: 0;
+  top: 0;
+}
+
+.logo img {
+  width: 78px; /* Adjust size as needed */
+  height: 78px;
+}
+
+.nav {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  display: flex;
+}
+
+.nav a {
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  transition: color 0.3s;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: Cascadia Code;
+  font-weight: 700;
+  line-height: 27.2px;
+  letter-spacing: 0.9px;
+  word-wrap: break-word;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.donate-button {
+  left: 0;
+  /* Adds space to the right of the button */
+  border: 1px solid red;
+}
+
+.donate-button button {
+  padding: 10px 20px;
+  background-color: #3d4f60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.donate-button button:hover {
+  background-color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo,
+  .donate-button {
+    margin: 0; /* Remove margins for smaller screens */
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* section one */
+.hero-section {
+  display: flex;
+  align-items: center;
+  /* padding: 50px; */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  height: 560.85px;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  max-width: 50%;
+}
+
+.text-container h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.text-container button {
+  padding: 10px 20px;
+  background-color: #3b3b3b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.image-container {
+  position: relative;
+  max-width: 560.85px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 423.01px;
+  border-radius: 283.9px;
+}
+
+.tag {
+  /* position: absolute;
+  padding: 5px 10px;
+  font-size: 18.26px;
+  background-color: #f0f0f0;
+  border-radius: 10.95px;
+  font-weight: 300;
+  width: 168.26px;
+  text-align: center;
+  height: 48.73px;
+  justify-content: center;
+  align-items: center;
+  align-self: center; */
+}
+
+.tag-collaborations {
+  width: 168.26px;
+  height: 48.73px;
+  padding: 9.13px;
+  left: 80.33px;
+  top: 15.28px;
+  color: #8f6e23;
+  position: absolute;
+  transform: rotate(-5.21deg);
+  transform-origin: 0 0;
+  background: #eae6dd;
+  border-radius: 10.95px;
+  border: 0.5px #c6af7b solid;
+  justify-content: center;
+  align-items: center;
+  gap: 9.13px;
+  display: inline-flex;
+}
+
+.tag-volunteerism {
+  width: 147.26px;
+  height: 48.73px;
+  padding: 9.13px;
+  left: 6.39px;
+  top: 114.11px;
+  position: absolute;
+  background: #add1fb;
+  border-radius: 10.95px;
+  border: 0.5px #1d71d5 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 9.13px;
+  display: inline-flex;
+}
+
+.tag-mentorship {
+  width: 125.26px;
+  height: 44.26px;
+  padding: 9.13px;
+  left: 383.42px;
+  top: 78.51px;
+  position: absolute;
+  background: #d1c4df;
+  border-radius: 10.95px;
+  border: 0.5px #5b4377 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 9.13px;
+  display: inline-flex;
+}
+
+.tag-empowerment {
+  width: 136.26px;
+  height: 44.26px;
+  padding: 9.13px;
+  left: 374.29px;
+  top: 255.61px;
+  position: absolute;
+  background: #add1fb;
+  border-radius: 10.95px;
+  border: 0.5px #1967c3 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 9.13px;
+  display: inline-flex;
+}
+
+.tag-free-resources {
+  width: 168.26px;
+  height: 44.26px;
+  padding: 9.13px;
+  left: 0px;
+  top: 323.17px;
+  position: absolute;
+  background: #d1c4df;
+  border-radius: 10.95px;
+  border: 0.5px #5b4377 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 9.13px;
+  display: inline-flex;
+}
+
+.tag-partnership {
+  width: 136.26px;
+  height: 44.26px;
+  padding: 9.13px;
+  left: 259.61px;
+  top: 405.33px;
+  position: absolute;
+  transform: rotate(4deg);
+  transform-origin: 0 0;
+  background: #c5e0d2;
+  border-radius: 10.95px;
+  border: 0.5px #0c6a38 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 9.13px;
+  display: inline-flex;
+}
+
+/* workshop section */
+.workshops-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #1e2a38;
+  color: #fff;
+}
+
+.workshops-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.workshops-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.workshop-card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.workshop-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.workshop-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.workshop-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .workshops-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* event section*/
+.events-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.events-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.event-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  /* border-bottom: 2px solid #ddd; */
+}
+
+.event-card h3 {
+  font-size: 1.25rem;
+  margin: 1rem 1rem 0.5rem;
+  color: #1e2a38;
+}
+
+.event-card p {
+  font-size: 0.95rem;
+  margin: 0.5rem 1rem 1rem;
+  color: #555;
+}
+
+.event-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  /* border-top: 1px solid #ddd; */
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.event-date,
+.event-time {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.event-info .icon {
+  width: 24px; /* Set the icon width */
+  height: 24px; /* Set the icon height */
+  margin-right: 5px; /* Space between icon and text */
+  vertical-align: middle; /* Aligns icon with text */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .events-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Mentor section */
+.mentors-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #2b3a42;
+}
+
+.mentors-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.mentors-text {
+  flex: 1;
+}
+
+.mentors-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #dbe0e4;
+  font-weight: bold;
+}
+
+.mentors-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #dbe0e4;
+}
+
+.explore-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #ffd85f; /* Yellow color for link */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mentors-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.mentor-card {
+  background-color: #d7e7f0;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+  color: #2b3a42; /* Dark text color */
+}
+
+.mentor-card:hover {
+  transform: scale(1.05);
+}
+
+.mentor-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.mentor-card h3 {
+  font-size: 1rem;
+  color: #2b3a42;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8); /* Slight background for text */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .mentors-content {
+    flex-direction: column;
+  }
+
+  .mentors-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .mentor-card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .mentors-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .mentors-section p {
+    font-size: 0.85rem;
+  }
+}
