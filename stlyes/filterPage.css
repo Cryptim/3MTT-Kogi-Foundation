@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* header section */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 180px;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 110px;
+    width: 100%;
+  }
+  
+  .logo {
+    max-width: 50px;
+    /* Adjust size as needed */
+    display: block;
+    margin-bottom: 12px;
+  }
+  
+  .logo img {
+  
+    width: 110px;
+    height: 50px;
+  
+  
+  }
+  
+  
+  .nav {
+    margin-left: 74px;
+    margin-right: 74px;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .resourceText {
+    font-family: Cascadia Code;
+    font-weight: 700;
+    line-height: 27.2px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+  
+  }
+  
+  .resources {
+    display: flex;
+    align-items: center"
+  
+  }
+  
+  .headerArrow {
+    width: 24px;
+    height: 24px;
+    padding: 5.64px 1.55px 5.63px 3.09px;
+  }
+  
+  .nav a {
+    display: flex;
+    transition: color 0.3s;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: Cascadia Code;
+    font-weight: 700;
+    word-wrap: normal;
+  
+  }
+  
+  .nav a:hover {
+    color: #007bff;
+  }
+  
+  .donate-button {
+    /* Adds space to the right of the button */
+  }
+  
+  .donate-button button {
+    padding: 10px 20px;
+    background-color: #3d4f60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .donate-button button:hover {
+    background-color: #007bff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    /* .header {
+      flex-direction: column;
+      align-items: center;
+    } */
+  
+    .logo,
+    .donate-button {
+      margin: 0;
+      /* Remove margins for smaller screens */
+    }
+  
+    .nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  .padding {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  
+  
+  /* footer section */
+  footer {
+    background-color: #2d3d4f;
+    color: #d8d5c3;
+    padding: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .logo-section {
+    flex: 1;
+    margin-left: 180px;
+    margin-top: 64px;
+    width: 311px;
+    height: 214px;
+    margin-right: 179px;
+  }
+  
+  
+  
+  .footerLogo {
+    font-family: Cascadia Code;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #ffffff;
+  }
+  
+  .links-section {
+    flex: 1;
+    margin-top: 64px;
+    margin-right: 179px;
+  }
+  
+  .links-section h3,
+  .donate-section h3 {
+    height: 62px;
+    padding: 10px 0px 0px 0px;
+    gap: 10px;
+    color: #ffffff;
+  
+    font-family: Cascadia Code;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+  }
+  
+  .links-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links-section li {
+    margin-bottom: 5px;
+  }
+  
+  .links-section a {
+    font-family: Cascadia Code;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .donate-section {
+    flex: 1;
+    margin-top: 64px;
+    margin-right: 180px;
+  }
+  
+  .donate-section button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .donate-section h3 {
+    font-family: Cascadia Code;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27.2px;
+    letter-spacing: 0.05em;
+    text-align: left;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+  }
+  
+  .social-icons .icon {
+    width: 24px;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a:hover .icon {
+    transform: scale(1.1);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    height: 2;
+    top: 5658px;
+    padding: 10px 180px 10px 180px;
+    gap: 10px;
+    background-color: #eae6dd;
+  }
+  
+  .footer-bottom p {
+    color: #000000;
+    font-family: Cascadia Code;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.2em;
+  }

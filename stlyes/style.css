@@ -8,6 +8,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* header section */
 .header {
   position: fixed;
   top: 0;
@@ -24,33 +25,65 @@ body {
   width: 100%;
 }
 
-.logo img {
-  width: 78px; /* Adjust size as needed */
-  height: 78px;
+.logo {
+  max-width: 50px;
+  /* Adjust size as needed */
+  display: block;
+  margin-bottom: 12px;
 }
 
+.logo img {
+
+  width: 110px;
+  height: 50px;
+
+
+}
+
+
 .nav {
-  gap: 40px;
+  margin-left: 74px;
+  margin-right: 74px;
   display: flex;
+  gap: 40px;
+}
+
+.resourceText {
+  font-family: Cascadia Code;
+  font-weight: 700;
+  line-height: 27.2px;
+  letter-spacing: 0.05em;
+  text-align: left;
+
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+
+}
+
+.resources {
+  display: flex;
+  align-items: center"
+
+}
+
+.headerArrow {
+  width: 24px;
+  height: 24px;
+  padding: 5.64px 1.55px 5.63px 3.09px;
 }
 
 .nav a {
-  padding: 10px;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  gap: 10px;
   display: flex;
   transition: color 0.3s;
   font-size: 18px;
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   font-family: Cascadia Code;
   font-weight: 700;
-  line-height: 27.2px;
-  letter-spacing: 0.9px;
-  word-wrap: break-word;
+  word-wrap: normal;
+
 }
 
 .nav a:hover {
@@ -85,7 +118,8 @@ body {
 
   .logo,
   .donate-button {
-    margin: 0; /* Remove margins for smaller screens */
+    margin: 0;
+    /* Remove margins for smaller screens */
   }
 
   .nav {
@@ -93,10 +127,12 @@ body {
     gap: 10px;
   }
 }
+
 .padding {
   padding-left: 180px;
   padding-right: 180px;
 }
+
 /* section one */
 .hero-section {
   display: flex;
@@ -104,8 +140,10 @@ body {
   align-items: center;
   background-color: #fff;
   padding: 0 180px;
-  margin-top: -40px; /* Negative margin to overlap with the header */
-  padding-top: 160px; /* Adjust padding to account for fixed header height */
+  margin-top: -40px;
+  /* Negative margin to overlap with the header */
+  padding-top: 160px;
+  /* Adjust padding to account for fixed header height */
   padding-bottom: 50px;
 }
 
@@ -260,6 +298,7 @@ body {
   gap: 9.13px;
   display: inline-flex;
 }
+
 /* featured section */
 .featuredStoryContainer {
   display: flex;
@@ -269,6 +308,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .featuredStory {
   width: 100%;
   height: 474px;
@@ -279,6 +319,7 @@ body {
   align-items: center;
   gap: 81px;
 }
+
 .featuredStoryDottedImageLine {
   padding: 12px;
   border-radius: 500px;
@@ -286,6 +327,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .featuredStoryImage {
   color: #3d4f60;
   font-size: 16px;
@@ -295,15 +337,19 @@ body {
   line-height: 28px;
   letter-spacing: 3.2px;
   word-wrap: break-word;
-  max-width: 100%; /* Make the image responsive */
-  height: auto; /* Keep the aspect ratio intact */
+  max-width: 100%;
+  /* Make the image responsive */
+  height: auto;
+  /* Keep the aspect ratio intact */
 }
+
 .featuredStoryTextContainer {
   padding: 8px 12px;
   background: #a7cab7;
   border-radius: 12px;
   text-align: center;
 }
+
 .featuredStoryText {
   color: #3d4f60;
   font-size: 16px;
@@ -312,12 +358,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 3.2px;
 }
+
 .featuredStoryName {
   color: #3d4f60;
   font-size: 24px;
   font-family: Cascadia Code;
   font-weight: 400;
 }
+
 .featuredStoryParagraph {
   width: 100%;
   color: #3d4f60;
@@ -327,11 +375,13 @@ body {
   line-height: 28px;
   word-wrap: break-word;
 }
+
 .featuredStoryMore {
   display: flex;
   align-items: center;
   gap: 8px;
 }
+
 .morefeatured {
   color: #0c6a38;
   font-size: 18px;
@@ -341,6 +391,7 @@ body {
   letter-spacing: 0.9px;
   word-wrap: break-word;
 }
+
 /* Free Tech Resources Section */
 .freeTechSection {
   display: flex;
@@ -350,6 +401,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .freeTechLearning {
   flex: 1;
   background: #fff;
@@ -357,12 +409,14 @@ body {
   width: 568px;
   height: 436px;
 }
+
 .freeTechLearningConatiner {
   padding: 8px 12px;
   background: #add1fb;
   border-radius: 12px;
   display: inline-block;
 }
+
 .freeTechLearningText {
   color: #3d4f60;
   font-size: 16px;
@@ -370,6 +424,7 @@ body {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .techTools {
   color: #3d4f60;
   font-size: 24px;
@@ -377,6 +432,7 @@ body {
   font-weight: 400;
   margin-top: 16px;
 }
+
 .techToolsParagraph {
   color: #3d4f60;
   font-size: 20px;
@@ -385,6 +441,7 @@ body {
   line-height: 1.4;
   margin-top: 12px;
 }
+
 .freeResources {
   color: #477ebf;
   font-size: 18px;
@@ -392,9 +449,12 @@ body {
   font-weight: 700;
   margin-top: 20px;
   text-decoration: none;
-  display: inline-flex; /* Ensures text and image stay on the same line */
-  align-items: center; /* Vertically centers the text and image */
+  display: inline-flex;
+  /* Ensures text and image stay on the same line */
+  align-items: center;
+  /* Vertically centers the text and image */
 }
+
 /* workshop section */
 .workshops-section {
   display: flex;
@@ -424,8 +484,10 @@ body {
 
 .workshop-card {
   display: flex;
-  flex-direction: column; /* Ensures vertical stacking */
-  gap: 23px; /* Space between all elements inside */
+  flex-direction: column;
+  /* Ensures vertical stacking */
+  gap: 23px;
+  /* Space between all elements inside */
   padding: 24px;
   background-color: #fff;
   color: #333;
@@ -467,6 +529,7 @@ body {
   line-height: 28px;
   text-align: left;
 }
+
 .custom-button {
   text-align: center;
   font-weight: 700;
@@ -482,6 +545,7 @@ body {
   white-space: nowrap;
   margin-bottom: 24px;
 }
+
 button {
   background-color: #ffffff;
   border: 2px solid #3d4f60;
@@ -600,11 +664,16 @@ button:hover {
 }
 
 .event-info .icon {
-  width: 24px; /* Set the icon width */
-  height: 24px; /* Set the icon height */
-  margin-right: 5px; /* Space between icon and text */
-  vertical-align: middle; /* Aligns icon with text */
+  width: 24px;
+  /* Set the icon width */
+  height: 24px;
+  /* Set the icon height */
+  margin-right: 5px;
+  /* Space between icon and text */
+  vertical-align: middle;
+  /* Aligns icon with text */
 }
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .events-container {
@@ -612,6 +681,7 @@ button:hover {
     align-items: center;
   }
 }
+
 /* Mentor section */
 .mentors-section {
   display: flex;
@@ -686,6 +756,7 @@ button:hover {
   height: 272px;
   height: 272px;
 }
+
 .mentor1 {
   background-color: #a7cab7;
 }
@@ -693,7 +764,8 @@ button:hover {
 .mentor-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image fills the container and maintains aspect ratio */
+  object-fit: cover;
+  /* Ensures the image fills the container and maintains aspect ratio */
   display: block;
 }
 
@@ -704,7 +776,8 @@ button:hover {
   width: 100%;
   margin: 0;
   text-align: center;
-  color: #ffffff; /* Text color */
+  color: #ffffff;
+  /* Text color */
   padding: 0.5rem;
   font-weight: bold;
   border-bottom-left-radius: 10px;
@@ -736,6 +809,7 @@ button:hover {
     font-size: 0.85rem;
   }
 }
+
 /* partner section */
 .partners-section {
   height: 429px;
@@ -777,6 +851,7 @@ button:hover {
 .partner-card:hover {
   transform: scale(1.05);
 }
+
 /* hightlight section */
 .highlight-card {
   display: flex;
@@ -786,7 +861,8 @@ button:hover {
 
 .profile-card {
   display: flex;
-  background-color: #eae6dd; /* Matching card background */
+  background-color: #eae6dd;
+  /* Matching card background */
   border-radius: 15px;
   padding: 10px;
   margin: 0 180px;
@@ -857,7 +933,8 @@ button:hover {
 
 .profile-link {
   display: inline-flex;
-  color: #149d59; /* Dark green for the link */
+  color: #149d59;
+  /* Dark green for the link */
   text-decoration: none;
   font-weight: bold;
 }
@@ -868,8 +945,10 @@ button:hover {
 
 /* footer section */
 footer {
-  background-color: #2d3d4f; /* Dark blue-gray color */
-  color: #d8d5c3; /* Light beige color */
+  background-color: #2d3d4f;
+  /* Dark blue-gray color */
+  color: #d8d5c3;
+  /* Light beige color */
   padding: 20px;
 }
 
@@ -889,11 +968,8 @@ footer {
   margin-right: 179px;
 }
 
-.logo {
-  max-width: 50px; /* Adjust size as needed */
-  display: block;
-  margin-bottom: 12px;
-}
+
+
 .footerLogo {
   font-family: Cascadia Code;
   font-size: 24px;
@@ -904,6 +980,7 @@ footer {
   text-decoration-skip-ink: none;
   color: #ffffff;
 }
+
 .links-section {
   flex: 1;
   margin-top: 64px;
@@ -957,6 +1034,7 @@ footer {
   cursor: pointer;
   margin-bottom: 10px;
 }
+
 .donate-section h3 {
   font-family: Cascadia Code;
   font-size: 18px;
@@ -995,6 +1073,7 @@ footer {
   gap: 10px;
   background-color: #eae6dd;
 }
+
 .footer-bottom p {
   color: #000000;
   font-family: Cascadia Code;
