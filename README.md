@@ -1,9 +1,9 @@
 
-# Three Million Technical Talent Kogi Foundation Website
+# CONFLUENCE INNOVATION HUB
 
 ## Table of Contents
 
-- [Three Million Technical Talent Foundation Website](#three-million-technical-talent-foundation-website)
+- [CONFLUENCE INNOVATION HUB](#CONFLUENCE INNOVATION HUB)
   - [Table of Contents](#table-of-contents)
   - [About](#about)
   - [Features](#features)
@@ -17,7 +17,7 @@
 
 ## About
 
-The **Three Million Technical Talent Foundation** website serves as an online platform for connecting, supporting, and empowering technical talents. The website provides information about the foundation’s mission, resources, volunteer opportunities, events, and ways to donate. The goal is to foster community engagement and create pathways for talent development, mentorship, and innovation in the tech space.
+The **CONFLUENCE INNOVATION HUB** website serves as an online platform for connecting, supporting, and empowering technical talents. The website provides information about the foundation’s mission, resources, volunteer opportunities, events, and ways to donate. The goal is to foster community engagement and create pathways for talent development, mentorship, and innovation in the tech space.
 
 ## Features
 
@@ -67,7 +67,7 @@ To set up the project locally, follow these steps:
 ## Folder Structure
 
 ```plaintext
-3MTT KOGI FOUNDATION/
+CONFLUENCE INNOVATION HUB/
 ├── assets/
 │   ├── css/
 │   │   └── styles.css       # Main stylesheet for the website
@@ -124,6 +124,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or issues related to the website, please contact:
 
-- **Three Million Technical Talent Foundation**
+- **CONFLUENCE INNOVATION HUB**
 - Email:timothyignatiusa@gmail.com
 - Website:
